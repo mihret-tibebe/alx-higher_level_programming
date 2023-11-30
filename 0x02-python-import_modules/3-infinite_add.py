@@ -7,5 +7,5 @@ if __name__ == '__main__':
         if index == 0:
                 continue
         result += int(sys.argv[index])
-    
+
     print(result)
