@@ -5,6 +5,6 @@ if __name__ == '__main__':
     result = 0
     for index in range(len):
         if index == 0:
-                continue
+            continue
         result += int(sys.argv[index])
     print(result)
