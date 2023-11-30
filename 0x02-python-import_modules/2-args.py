@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import sys
 if __name__ == '__main__':
-    # print(len(sys.argv))
     len = len(sys.argv)
     if len == 1:
         print('0 arguments.')
@@ -14,5 +13,3 @@ if __name__ == '__main__':
             if index == 0:
                 continue
             print("{:d}: {}".format(index, sys.argv[index]))
-
-
