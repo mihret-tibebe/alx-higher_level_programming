@@ -3,9 +3,9 @@
 def no_c(my_string):
     result = ''
     for c in my_string:
-        if c == 'c' or c == 'C':
-            c = ''
-        result += c
+        if c.lower() != 'c':
+            # c = ''
+            result += c
 
     return result
 
