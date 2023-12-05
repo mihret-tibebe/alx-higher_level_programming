@@ -8,7 +8,3 @@ def no_c(my_string):
         result.append(c)
 
     return ''.join(result)
-
-print(no_c("Best School"))
-print(no_c("Chicago"))
-print(no_c("C is fun!"))
