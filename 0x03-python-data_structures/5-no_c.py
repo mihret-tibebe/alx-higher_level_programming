@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 
 def no_c(my_string):
-    result = []
+    result = ''
     for c in my_string:
         if c == 'c' or c == 'C':
             c = ''
-        result.append(c)
+        result += c
 
-    return ''.join(result)
+    return result
+
+print(no_c("Best School"))
+print(no_c("Chicago"))
+print(no_c("C is fun!"))
