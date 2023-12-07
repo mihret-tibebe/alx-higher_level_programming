@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 def uniq_add(my_list=[]):
-    unique_list = []
-    summation = 0
+    uniq_list = list(set(my_list))
+    sum = 0
+    for i in uniq_list:
+        sum += i
+    return sum
 
-    for i in my_list:
-        if i not in unique_list:
-            unique_list.append(i)
-            summation += i
-
-    return summation
+my_list = [1, 2, 3, 1, 4, 2, 5]
+result = uniq_add(my_list)
+print("Result: {:d}".format(result))
