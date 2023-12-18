@@ -1,11 +1,18 @@
 #!/usr/bin/python3
 
+
 def safe_print_division(a, b):
-    result = 0
+    quotient = 0
+    div_by_zero = False
+
     try:
-        result = a / b
-        return result
+        quotient = a / b
     except ZeroDivisionError:
-        return None
+        div_by_zero = True
     finally:
-        print("Inside result: {}".format(result))
+        if div_by_zero:
+            print("{}{}".format("Inside result: ", None))
+            return None
+
+        print("{}{}".format("Inside result: ", quotient))
+        return quotient
