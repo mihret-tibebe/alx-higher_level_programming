@@ -5,8 +5,3 @@ def raise_exception():
         raise TypeError()
     except TypeError as err:
         raise err
-
-try:
-    raise_exception()
-except TypeError as te:
-    print("Exception raised")
