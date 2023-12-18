@@ -6,3 +6,4 @@ def safe_print_integer_err(value):
         return True
     except Exception as ex:
         print("Exception:", ex)
+        return False
