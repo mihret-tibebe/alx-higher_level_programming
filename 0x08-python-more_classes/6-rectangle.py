@@ -3,9 +3,11 @@
 """
 
 
-class Rectangle():
+class Rectangle:
     """rectangle class
     """
+    number_of_instances=0
+
     def __init__(self, width=0, height=0):
         if type(width) is not int:
             raise TypeError("width must be an integer")
@@ -18,6 +20,8 @@ class Rectangle():
         if height < 0:
             raise ValueError("height must be >= 0")
         self.__height = height
+
+        Rectangle.number_of_instances+=1
 
     @property
     def width(self):
