@@ -7,7 +7,7 @@ class Rectangle():
     """rectangle class
     """
     def __init__(self, width = 0):
-        self.width = width
+        self.__width = width
 
     @property
     def width(self):
