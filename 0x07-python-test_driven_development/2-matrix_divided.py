@@ -49,4 +49,3 @@ def matrix_divided(matrix, div):
             new_matrix[-1].append(round(matrix[i][j] / div, 2))
 
     return new_matrix
-  
