@@ -1,2 +1,2 @@
 -- show tables of a database
-SHOW TABLES FROM &1;
+SHOW TABLES [FROM IF EXISTS &1];
